@@ -16,10 +16,4 @@ $ app-template-onboard --help
   Usage
     $ app-template-onboard
 
-  Options
-    --name  Your name
-
-  Examples
-    $ app-template-onboard --name=Jane
-    Hello, Jane
 ```
