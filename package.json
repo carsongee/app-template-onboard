@@ -18,7 +18,6 @@
 	"dependencies": {
 		"ink": "^4.1.0",
 		"ink-big-text": "^2.0.0",
-		"ink-confirm-input": "^2.0.0",
 		"ink-form": "^2.0.1",
 		"ink-gradient": "^3.0.0",
 		"ink-link": "^4.1.0",
