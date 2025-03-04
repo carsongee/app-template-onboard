@@ -43,7 +43,7 @@ export default function Index() {
         showForm && (React.createElement(React.Fragment, null,
             React.createElement(Box, { flexGrow: 1 },
                 React.createElement(Gradient, { name: "summer" },
-                    React.createElement(BigText, { text: "DataRobot - Talk to My Data" }))),
+                    React.createElement(BigText, { text: "DataRobot" }))),
             React.createElement(Box, { alignItems: "flex-start", flexGrow: 1 },
                 React.createElement(Text, null,
                     "Hello! \uD83D\uDC4B Check the ",

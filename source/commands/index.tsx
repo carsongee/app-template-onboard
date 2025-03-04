@@ -50,7 +50,7 @@ export default function Index() {
 				<>
 					<Box flexGrow={1}>
 						<Gradient name="summer">
-							<BigText text="DataRobot - Talk to My Data" />
+							<BigText text="DataRobot" />
 						</Gradient>
 					</Box>
 					<Box alignItems="flex-start" flexGrow={1}>
