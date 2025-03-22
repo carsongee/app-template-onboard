@@ -62,6 +62,8 @@ export default function Index() {
 					</Box>
 					<Box>
 						<Form {...form} onSubmit={(result: any) => {
+							// Cheat and drop in a random PULUMI password
+							result.PULUMI_CONFIG_PASSPHRASE = 'asdf879789*&^(GBS&^BVAS(*&b6*(AS&BDT&*(^BDFUoiNS &(*TYSAN KJUHDSFB& ^*)))))'
 							writeEnvFile(result);
 							setShowForm(false);
 						}} />
