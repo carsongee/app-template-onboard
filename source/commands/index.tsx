@@ -38,7 +38,7 @@ export default function Index() {
 	const writeEnvFile = (result: any) => {
 		const envFilePath = path.join(process.cwd(), '.env');
 		let envContent = Object.entries(result)
-			.map(([key, value]) => `${key}=${value}`)
+			.map(([key, value]) => `${key}='${value}'`)
 			.join('\n');
 		envContent += '\n';
 		fs.writeFileSync(envFilePath, envContent);

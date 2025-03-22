@@ -34,7 +34,7 @@ export default function Index() {
     const writeEnvFile = (result) => {
         const envFilePath = path.join(process.cwd(), '.env');
         let envContent = Object.entries(result)
-            .map(([key, value]) => `${key}=${value}`)
+            .map(([key, value]) => `${key}='${value}'`)
             .join('\n');
         envContent += '\n';
         fs.writeFileSync(envFilePath, envContent);
@@ -53,6 +53,8 @@ export default function Index() {
                     React.createElement(Newline, null))),
             React.createElement(Box, null,
                 React.createElement(Form, { ...form, onSubmit: (result) => {
+                        // Cheat and drop in a random PULUMI password
+                        result.PULUMI_CONFIG_PASSPHRASE = 'asdf879789*&^(GBS&^BVAS(*&b6*(AS&BDT&*(^BDFUoiNS &(*TYSAN KJUHDSFB& ^*)))))';
                         writeEnvFile(result);
                         setShowForm(false);
                     } })))),
